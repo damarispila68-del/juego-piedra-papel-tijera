@@ -1,0 +1,17 @@
+flowchart TD
+    Start([Inicio]) --> ShowOptions[Mostrar opciones]
+    ShowOptions --> GetPlayerChoice[Leer elección del jugador]
+    GetPlayerChoice --> GetComputerChoice[Generar elección de la computadora]
+    GetComputerChoice --> Compare{¿Elecciones iguales?}
+    Compare -- Sí --> Tie[Mostrar "Empate"]
+    Compare -- No --> CheckWin{¿Jugador gana?}
+    CheckWin -- Sí --> Win[Mostrar "Ganaste"]
+    CheckWin -- No --> Lose[Mostrar "Perdiste"]
+    Tie --> AskRepeat{¿Jugar otra vez?}
+    Win --> AskRepeat
+    Lose --> AskRepeat
+    AskRepeat -- Sí --> ShowOptions
+    AskRepeat -- No --> End([Fin])
+
+    classDef decision fill:#f9f,stroke:#333,stroke-width:2px;
+    class Compare,CheckWin,AskRepeat decision;
