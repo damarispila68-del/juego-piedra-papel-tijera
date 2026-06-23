@@ -1,4 +1,9 @@
 # juego-piedra-papel-tijera
+# Piedra, papel o tijeras
+- [Descripción](#descripción)
+- [Funcionalidades](#funcionalidades)
+- [Conceptos Utilizados](#conceptos-utilizados)
+- [Vista Previa](#vista-previa)
 ## Descripción general
 Este diagrama explica el flujo de un juego de Piedra, Papel o Tijera:
 - El jugador elige una opción.
